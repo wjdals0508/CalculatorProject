@@ -32,6 +32,7 @@ public class App {
             else if (operSymbol == '/') {
                 if (secondNum == 0) {
                     System.out.println("0으로 나눌 수 없습니다.");
+                    continue;
                 }
 
                 int answer = firstNum / secondNum;
