@@ -59,22 +59,6 @@ public class App {
                         System.out.println("**모든 연산 기록 삭제 완료**");
                         break;
                 }
-/*
-                if (functionScan.equals("y") || functionScan.equals("x")) break;
-                else if (functionScan.equals("h")) {
-                    System.out.println("---------------------------------");
-                    outResult(cal.getLastResults(cal.getHistoryNum()));
-                    System.out.println("---------------------------------");
-                }
-                else if (functionScan.equals("r")) {
-                    cal.removeOldestResult();
-                    System.out.println("**가장 오래된 연산 기록 삭제 완료**");
-                }
-                else if (functionScan.equals("ra")) {
-                    cal.removeAllResult();
-                    System.out.println("**모든 연산 기록 삭제 완료**");
-                }
-*/
             }
 
             if (functionScan.equals("x")) break;
