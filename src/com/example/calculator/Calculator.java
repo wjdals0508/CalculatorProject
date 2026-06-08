@@ -11,24 +11,20 @@ public class Calculator {
     public String Calculate(int firstNum, int secondNum, char operSymbol) {
 
         int answer;
-        String result;
 
         // 더하기
         if (operSymbol == '+') {
             answer = firstNum + secondNum;
-            result = firstNum + " + " + secondNum + " = " + answer;
         }
 
         // 빼기
         else if (operSymbol == '-') {
             answer = firstNum - secondNum;
-            result = firstNum + " - " + secondNum + " = " + answer;
         }
 
         // 곱하기
         else if (operSymbol == '*') {
             answer = firstNum * secondNum;
-            result = firstNum + " * " + secondNum + " = " + answer;
         }
 
         // 나누기
@@ -37,7 +33,6 @@ public class Calculator {
                 return "0으로 나눌 수 없습니다.";
             }
             answer = firstNum / secondNum;
-            result = firstNum + " / " + secondNum + " = " + answer;
         }
 
         // 유효하지 않은 사칙연산
@@ -45,7 +40,7 @@ public class Calculator {
             return "유효하지 않은 사칙연산 입니다.";
         }
 
-        results.add(result);
+        results.add(firstNum + " " + operSymbol + " " + secondNum + " = " + answer);
 
         return Integer.toString(answer);
     }
